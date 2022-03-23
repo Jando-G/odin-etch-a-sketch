@@ -16,7 +16,7 @@ function generateGrid(size) {
 flexboxes.forEach(box => {
     for(let i = 0; i < size; i++) {
         box.appendChild(document.createElement("div")).style
-        .cssText = `width: ${800 / size}px; height: ${800 / size}px; border: 1px dotted black;`;
+        .cssText = `width: ${800 / size}px; height: ${800 / size}px;`;
     }
 })
     squares = document.querySelectorAll("div.flexbox > div");
@@ -32,8 +32,8 @@ squares.forEach(square => {
 generateGrid(16);
 
 document.getElementById("reset").addEventListener("click", (e) => {
-    let size = prompt("Enter size of new grid (max: 100)\nLong loading time :(", 16)
-    if(size > 100 || size < 0 || isNaN(size)) {
+    let size = prompt("Enter size of new grid (max: 30)\nLong loading time :(", 16)
+    if(size > 30 || size < 0 || isNaN(size)) {
         alert("Invalid Value")
         return;
     }
