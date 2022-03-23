@@ -2,14 +2,16 @@
     box-sizing: border-box;
 }
 #container {
-    height: 1000px;
-    width: 1000px;
+    border: 1px solid black;
+    width: 800px;
+    height: 800px;
 }
 .square {
-    height: 50px;
     width: 50px;
-    border: 1px solid black;
+    height: 50px;
+    border: 1px dotted black;
 }
 .flexbox {
     display: flex;
 }
+
